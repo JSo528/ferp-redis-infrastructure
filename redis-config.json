@@ -1,0 +1,27 @@
+{
+  "replicationGroupId": "ferp-production-redis",
+  "description": "redis for ferp-production",
+  "status": "available",
+  "nodeType": "cache.r7g.large",
+  "engineVersion": "7.0.7",
+  "parameterGroupName": "default.redis7",
+  "subnetGroupName": "ferp-production-redis",
+  "securityGroupIds": [
+    "sg-c68169a3"
+  ],
+  "memberClusters": [
+    "ferp-production-redis-001",
+    "ferp-production-redis-002",
+    "ferp-production-redis-003"
+  ],
+  "primaryEndpoint": "ferp-production-redis.bkaqj6.ng.0001.use1.cache.amazonaws.com:6379",
+  "readerEndpoint": "ferp-production-redis-ro.bkaqj6.ng.0001.use1.cache.amazonaws.com:6379",
+  "multiAZ": true,
+  "automaticFailover": "enabled",
+  "transitEncryptionEnabled": false,
+  "atRestEncryptionEnabled": false,
+  "snapshotRetentionLimit": 1,
+  "snapshotWindow": "05:00-06:00",
+  "preferredMaintenanceWindow": "thu:08:00-thu:09:00",
+  "arn": "arn:aws:elasticache:us-east-1:455623190313:replicationgroup:ferp-production-redis"
+}
