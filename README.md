@@ -21,9 +21,10 @@ Each cluster is a `CfnReplicationGroup` with the following configuration:
 | Maintenance window | Thursday 08:00–09:00 UTC |
 
 Provisioned clusters:
-- `ferp-football-redis`
-- `ferp-soccer-redis`
-- `ferp-rugby-redis`
+- `ferp-football-prod`
+- `ferp-soccer-prod`
+- `ferp-rugby-prod`
+- `ferp-baseball-prod`
 
 ## Adding a new sport
 
