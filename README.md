@@ -25,6 +25,7 @@ Provisioned clusters:
 - `ferp-soccer-prod`
 - `ferp-rugby-prod`
 - `ferp-baseball-prod`
+- `ferp-staging` — a single cluster shared by all sports, using the same node type as production but only one node (no replicas, no Multi-AZ/failover) to keep staging costs down, with staging-specific overrides: subnet group `ferp-staging-redis`, snapshot window 08:30–09:30 UTC, maintenance window Sunday 05:00–06:00 UTC
 
 ## Adding a new sport
 
