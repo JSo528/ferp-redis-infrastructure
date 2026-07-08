@@ -1,10 +1,10 @@
 # ferp-redis-infrastructure
 
-AWS CDK project that provisions ElastiCache Redis replication groups for the Front-End Reporting Platform (FERP). Each sports vertical (football, soccer, rugby) gets its own isolated Redis cluster, all mirroring the configuration of the existing `ferp-production-redis` cluster.
+AWS CDK project that provisions ElastiCache Redis replication groups for the Front-End Reporting Platform (FERP). Each sports vertical (football, soccer, rugby, baseball) gets its own isolated production Redis cluster, all mirroring the configuration of the existing `ferp-production-redis` cluster, plus a single staging cluster shared by all sports.
 
 ## Infrastructure overview
 
-Each cluster is a `CfnReplicationGroup` with the following configuration:
+Each production cluster is a `CfnReplicationGroup` with the following configuration:
 
 | Setting | Value |
 |---|---|
